@@ -1,10 +1,12 @@
 class Vehicle:
-    make = None
-    model = None
+    def __init__(self, make, model):
+        self.make = make
+        self.model = model
     def get_info(self):
         print(self.make,self.model)
 class Car(Vehicle):
-    fuel_type = None
+        super().__init__(make,model)
+        fuel_type = None
     def get_info(self):
         print(self.make,self.model,self.fuel_type)
 Car1 = Car()
