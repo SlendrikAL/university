@@ -7,7 +7,7 @@ class Circle:
         self.radius = radius
 
     def get_radius(self):
-        return print(self.radius)
+        print(self.radius)
 
     def set_radius(self,new_radius):
         self.radius = new_radius
