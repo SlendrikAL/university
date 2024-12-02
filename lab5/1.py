@@ -1,17 +1,14 @@
 class Book:
-    title = None
-    author = None
-    year = None
+    def __init__(self,title,author,year):
+        self.title = title
+        self.author = author
+        self.year = year
+
     def get_info(self):
-        print('Название книги:',self.title,',','Автор:',self.author,',','Год издания:',self.year)
-book1 = Book()
-book1.title = 'Мартин Иден'
-book1.author = 'Джек Лоднон'
-book1.year = 1909
+        return ('Название книги:',self.title,',','Автор:',self.author,',','Год издания:',self.year)
 
-book2 = Book()
-book2.title = 'Горе от ума'
-book2.author = 'Александр Грибоедов'
-book2.year = 1825
+book1 = Book('Мартин Иден','Джек Лоднон',1909)
+book2 = Book('Горе от ума','Александр Грибоедов',1825)
 
-
+print(book1.get_info())
+print(book2.get_info())
